@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../Images/SPA/landscape.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.succulent{
+    width: 70%;
+    height: 400px;
+    background: clear;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+}
+
+.display{
+    width: 90px;
+    height: 125px;
+    position: relative;
+    background: url(../Images/SPA/succ4.png) no-repeat top center;
+    background-size: cover;
+    cursor:pointer;
+}
+
+.person{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.girl{
+    background: url(../Images/SPA/girl4.png);
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+}
+
+.quote{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.358);
+    top:40px;
+    position: absolute;
+    display: none;
+}
+
+.quote .active{
+    display: block;
+}
+
+button{
+    padding:5px;
+    background: whitesmoke;
+    border:0;
+    cursor: pointer;
+    margin:5px;
+}
+
+.list{
+    background: whitesmoke;
+    width: 500px;
+    padding: 10px;
+    display: none;
+}
+
+.list .active{
+    display: block;
+}
+
+.list li{
+    margin: 15px;
+}
+
+.moveOn{
+    display: none;
+}
+
+.next .moveOn{
+    display: block;
+}
+
+.next .goodChoice{
+    display: block;
+}
+
+.next .quoteContainer, .next #like, .next #dislike{
+    display: none;
+}
+

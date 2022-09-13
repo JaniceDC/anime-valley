@@ -5,103 +5,119 @@
 }
 
 body{
-    background: url(../Images/SPA/landscape.jpg) no-repeat;
+    background: url(../css/images/SPA/background.jpg) no-repeat top center;
     background-size: cover;
+}
+
+header{
+    background: rgba(255,255,255, 0.5);
+    text-align: center;
+    padding: 10px;
+    color: darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: fit-content;
+    align-items: flex-start;
+    height: calc(100vh - 75px);
+    padding:20px;
     position: relative;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
-.succulent{
-    width: 70%;
-    height: 400px;
-    background: clear;
+.list{
+    width: 20%;
+}
+
+.succ{
+    width:80%;
+    height:100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     position: relative;
 }
-
-.display{
-    width: 90px;
-    height: 125px;
+.s{
+    width:110px;
+    height:120px;
     position: relative;
-    background: url(../Images/SPA/succ4.png) no-repeat top center;
+    background: url(../css/images/SPA/splant.png) no-repeat top center;
     background-size: cover;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .person{
-    width: 90px;
-    height: 90px;
+    width:100px;
+    height: 240px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left:0
 }
 
 .girl{
-    background: url(../Images/SPA/girl4.png);
-    width: 50%;
-    height: 50%;
+    background: url(../css/images/SPA/person.png);
+    width: 100%;
+    height: 100%;
     background-size: cover;
 }
+/*flip girl image*/
 
 .quote{
-    width: 300px;
-    height: 200px;
-    background-color: rgba(128, 128, 128, 0.358);
+    width:300px;
+    height:200px;
+    background:  rgba(255,255,255, 0.5);
     top:40px;
     position: absolute;
     display: none;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* make this a grow box*/
 }
 
-.quote .active{
+.quote.active{
     display: block;
 }
 
 button{
-    padding:5px;
-    background: whitesmoke;
-    border:0;
+    background: darkcyan;
+    border: 0;
     cursor: pointer;
-    margin:5px;
+    margin: 25px;
+    padding: 20px;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.list{
-    background: whitesmoke;
-    width: 500px;
-    padding: 10px;
+.display{
+    background: rgba(245, 245, 245, 0.654);
+    width: 95%;
+    padding: 20px;
+    margin: 6px;
     display: none;
+    color: darkslategrey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
 }
 
-.list .active{
-    display: block;
+.display.active{
+    display:block
 }
 
-.list li{
-    margin: 15px;
+.display li{
+    margin-left:15px;
 }
 
 .moveOn{
+    display: none; 
+}
+
+.goodChoice{
+    display: none; 
+}
+.next .moveOn{display: block;}
+.next .quoteContainer,.next #like,.next #dislike{
     display: none;
 }
-
-.next .moveOn{
-    display: block;
-}
-
-.next .goodChoice{
-    display: block;
-}
-
-.next .quoteContainer, .next #like, .next #dislike{
-    display: none;
-}
-

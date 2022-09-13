@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,38 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Valley</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../javascriptproject/css/style.css">
 </head>
 <body>
-    <header id="main-header">
-        <div class="container">
-            <h1>Explore Anime Valley</h1>
-            <p>Move along the succulents to reveal a random quote. If you like it, it will be saved as a list of anime for you to explore</p>
-        </div>
+    <header>
+        <h1>Explore Anime Valley</h1><br>
+        <p>Move along the succulents to reveal a random quote. If you like it, it will be saved as a list of anime for you to explore</p>
     </header>
     <div class="container">
-        <div class="succulent">
+        <div class="succ">
             <div class="quote next">
                 <div class="goodChoice"><p>Good choice! Keep going to see if others tickle your fancy... Reveal your anime at the end!</p></div>
-                <div class="moveOn"></div><p>You are not interested in this anime! Move on and hopefully we can spark your interest...</p></div>
-                <div class="quoteContainer"></div>
-            </div>
-            <button id="like">I like it!</button>
-            <button id="dislike">Not interest!</button>
-        </div>
-        <div class="person"></div>
-        <div class="girl"></div>
+                <div class="moveOn"><p>You are not interested in this anime! Move on and hopefully we can spark your interest...</p></div>
+                <!--How do I make these as a alert?  This would be in JavaScript?
+                <button onclick="myLike()">Like it</button>
 
-        <div class="succ1 display active"></div>
-        <div class="succ2 display"></div>
-        <div class="succ3 display"></div>
-        <div class="succ4 display"></div>
+                <script>
+                function myLike() {
+                  alert("Good choice! Keep going to see if others tickle your fancy... Reveal your anime at the end!");
+                }
+                </script>
+            -->
+
+                <div class="quoteContainer">
+                    
+                </div>
+                <button id="like">Like</button>
+                <button id="dislike">Dislike</button>
+            </div>
+            <div class="person"><div class="girl"></div></div>
+
+            <div class="s1 s active">
+                
+            </div>
+            <div class="s2 s">
+              
+            </div>
+            <div class="s3 s">
+               
+            </div>
+            <div class="s4 s ">
+                
+            </div>
+        </div>
+        <div class="list">
+            <button id="showDisplay">Reveal your list of anime to watch</button>
+            <div class="display">
+                <ul class="displayUl"></ul>
+            </div>
+        </div>
+       
+        
     </div>
 
-<button id="showselection">Reveal your list of anime to watch</button>
-<div class="list">
-    <ul class="listAnime"></ul>
-</div>
-    <script src="./js/main.js"></script>
+    <script src="../javascriptproject/js/main.js"></script>
 </body>
 </html>

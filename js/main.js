@@ -4,12 +4,25 @@ const boxThree = document.querySelector(".s3");
 const boxFour = document.querySelector(".s4");
 
 const person = document.querySelector(".person");
+
 const quote = document.querySelector(".quote");
 const quoteContainer = document.querySelector(".quoteContainer");
+
 const displayBox = document.querySelector(".display");
 const displayBoxUl = document.querySelector(".displayUl");
+
 const likeBtn = document.querySelector("#like");
+const myLike = () => {
+  alert(
+    "Good choice! Keep going to see if others tickle your fancy... Reveal your anime at the end!"
+  );
+};
 const dislikeBtn = document.querySelector("#dislike");
+const myDislike = () => {
+  alert(
+    "You are not interested in this anime! Move on and hopefully we can spark your interest..."
+  );
+};
 const showDisplayBtn = document.querySelector("#showDisplay");
 const moveOn = document.querySelector(".moveOn");
 const goodChoice = document.querySelector(".goodChoice");

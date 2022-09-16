@@ -7,7 +7,7 @@ const person = document.querySelector(".person");
 
 const quote = document.querySelector(".quote");
 const quoteContainer = document.querySelector(".quoteContainer");
-
+const quoteContainerName = document.querySelector(".quoteContainerName");
 const displayBox = document.querySelector(".display");
 const displayBoxUl = document.querySelector(".displayUl");
 
@@ -26,11 +26,13 @@ const myDislike = () => {
 const showDisplayBtn = document.querySelector("#showDisplay");
 const moveOn = document.querySelector(".moveOn");
 const goodChoice = document.querySelector(".goodChoice");
+
 const fetchQuote = async () => {
   await fetch("https://animechan.vercel.app/api/random")
     .then((response) => response.json())
     .then((data) => {
       quoteContainer.innerHTML = data.quote;
+      quoteContainerName.innerHTML = data.anime;
     });
 };
 
@@ -40,7 +42,7 @@ dislikeBtn.addEventListener("click", () => {
   quote.classList.add("next");
 });
 likeBtn.addEventListener("click", () => {
-  textContent = quoteContainer.textContent;
+  textContent = quoteContainerName.textContent;
   reveal.push(textContent);
   console.log(reveal);
 });
